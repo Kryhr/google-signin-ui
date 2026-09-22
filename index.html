@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in - Google Accounts</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png">
+</head>
+<body>
+  <div class="main">
+    <div class="card">
+      <!-- Logo -->
+      <div class="logo">
+        <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="qaEJec">
+            <path fill="#ea4335" d="M67.954 16.303c-1.33 0-2.278-.608-2.886-1.804l7.967-3.3-.27-.68c-.495-1.26-2.005-3.79-5.102-3.79-3.06 0-5.627 2.41-5.627 5.96 0 3.39 2.53 5.96 5.875 5.96 2.73 0 4.31-1.63 4.97-2.57l-2.03-1.35c-.673.98-1.6 1.64-2.93 1.64zm-.203-7.27c1.04 0 1.92.52 2.21 1.264l-5.22 2.16c-.19-1.94 1.58-3.424 3.01-3.424z"></path>
+          </g>
+          <g id="YGlOvc">
+            <path fill="#34a853" d="M58.193.67h2.564v17.44h-2.564z"></path>
+          </g>
+          <g id="BWfIk">
+            <path fill="#4285f4" d="M54.152 8.066h-.088c-.588-.697-1.716-1.33-3.136-1.33-2.98 0-5.71 2.614-5.71 5.98 0 3.338 2.73 5.933 5.71 5.933 1.42 0 2.548-.64 3.136-1.36h.088v.86c0 2.28-1.225 3.5-3.192 3.5-1.56 0-2.525-1.12-2.905-2.08l-2.27.94c.64 1.56 2.34 3.4 5.19 3.4 3.01 0 5.57-1.78 5.57-6.11V6.63h-2.4v1.436zm-2.94 5.844c-1.77 0-3.13-1.48-3.13-3.32 0-1.84 1.36-3.32 3.13-3.32 1.76 0 3.13 1.48 3.13 3.32 0 1.84-1.37 3.32-3.13 3.32z"></path>
+          </g>
+          <g id="e6m3fd">
+            <path fill="#fbbc05" d="M27.7 11.32c0-3.39 2.69-5.96 5.94-5.96 1.69 0 3.09.7 4.04 1.83l1.78-1.77C37.66 3.66 35.2 2.4 32.64 2.4c-5.13 0-9.3 3.99-9.3 9.92 0 5.93 4.17 9.92 9.3 9.92 2.56 0 5.02-1.26 6.82-3.42l-1.78-1.77c-.95 1.13-2.35 1.83-4.04 1.83-3.25 0-5.94-2.57-5.94-5.96z"></path>
+          </g>
+          <g id="vbkMyb">
+            <path fill="#ea4335" d="M18.64 11.32c0-3.39 2.69-5.96 5.94-5.96 1.69 0 3.09.7 4.04 1.83l1.78-1.77C28.6 3.66 26.14 2.4 23.58 2.4c-5.13 0-9.3 3.99-9.3 9.92 0 5.93 4.17 9.92 9.3 9.92 2.56 0 5.02-1.26 6.82-3.42l-1.78-1.77c-.95 1.13-2.35 1.83-4.04 1.83-3.25 0-5.94-2.57-5.94-5.96z"></path>
+          </g>
+          <g id="Id3XOj">
+            <path fill="#4285f4" d="M9.98 6.4c1.42 0 2.7.48 3.71 1.42l1.78-1.77C13.98 4.4 12.12 3.4 9.98 3.4 6.1 3.4 2.9 5.9 1.58 9.3l2.1 1.63C4.5 8.2 7 6.4 9.98 6.4z"></path>
+          </g>
+          <g id="pVq4u">
+            <path fill="#34a853" d="M9.98 17.6c-2.98 0-5.48-1.8-6.3-4.33l-2.1 1.63C2.9 18.1 6.1 20.6 9.98 20.6c2.14 0 4 -.8 5.49-2.15l-1.78-1.77c-1.01.94-2.29 1.42-3.71 1.42z"></path>
+          </g>
+          <g id="tHzdxZ">
+            <path fill="#fbbc05" d="M3.68 11.32c0-.7.1-1.37.28-2.01L1.86 7.68C1.45 8.8 1.2 10.03 1.2 11.32c0 1.29.25 2.52.66 3.64l2.1-1.63c-.18-.64-.28-1.31-.28-2.01z"></path>
+          </g>
+        </svg>
+      </div>
+
+      <h1 class="title">Sign in</h1>
+      <p class="subtitle">Use your Google Account</p>
+
+      <!-- Email step -->
+      <div id="email-step" class="step">
+        <div class="input-wrap">
+          <input type="email" id="email" class="input" required autofocus autocomplete="username">
+          <label for="email" class="label">Email or phone</label>
+        </div>
+        <div class="forgot">
+          <a href="#">Forgot email?</a>
+        </div>
+        <div class="guest">
+          <p>Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more</a></p>
+        </div>
+        <div class="actions">
+          <a href="#" class="create">Create account</a>
+          <button type="button" id="next-btn" class="btn-next">Next</button>
+        </div>
+      </div>
+
+      <!-- Password step (hidden until Next) -->
+      <div id="password-step" class="step hidden">
+        <div class="account-chip" id="account-chip">
+          <span class="chip-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#5f6368"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </span>
+          <span id="chip-email"></span>
+          <span class="chip-arrow">▼</span>
+        </div>
+        <div class="input-wrap">
+          <input type="password" id="password" class="input" required autocomplete="current-password">
+          <label for="password" class="label">Enter your password</label>
+        </div>
+        <div class="show-pass">
+          <label class="checkbox">
+            <input type="checkbox" id="show-password">
+            <span class="checkmark"></span>
+            Show password
+          </label>
+        </div>
+        <div class="actions">
+          <a href="#" class="create">Forgot password?</a>
+          <button type="button" id="signin-btn" class="btn-next">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="lang">
+        <select aria-label="Change language">
+          <option>English (United States)</option>
+          <option>Español</option>
+          <option>Français</option>
+          <option>Deutsch</option>
+          <option>日本語</option>
+        </select>
+      </div>
+      <div class="links">
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
